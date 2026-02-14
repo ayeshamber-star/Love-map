@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // 1. Setup the Map centered in Bangalore
-        var map = L.map('map').setView([12.89, 77.60], 12);
+        var map = L.map('map').setView([12.91, 77.60], 12);
 
         // 2. Add a pretty Map Style
         L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -27,17 +27,37 @@
 
         // 3. Your Romantic Landmarks
         
-        // Landmark 1: School (Met in 11th Grade)
-        L.marker([12.865804676173955, 77.60010729359993]).addTo(map)
-            .bindPopup("<div class='popup-content'><b>🏫 Our School</b><br>Where we met in 11th Grade!</div>");
+        // School (Updated)
+        L.marker([12.81406535861886, 77.58701492191595]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>🏫 School</b><br>Where we met in 11th Grade!</div>");
 
-        // Landmark 2: Cat Cafe (First Date)
+        // Cat Cafe
         L.marker([12.922223623097095, 77.59103608061213]).addTo(map)
             .bindPopup("<div class='popup-content'><b>🐱 Cat Cafe</b><br>Our legendary first date!</div>");
 
-        // Landmark 3: The Bench (First Kiss)
+        // The Bench
         L.marker([12.902436989761735, 77.60434530990875]).addTo(map)
-            .bindPopup("<div class='popup-content'><b>💋 The Bench</b><br>Behind the apartment... our first kiss! ❤️</div>")
+            .bindPopup("<div class='popup-content'><b>💋 The Bench</b><br>Our first kiss! ❤️</div>");
+
+        // Tuition
+        L.marker([12.891732322742019, 77.59505035262079]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>📚 Tuition</b><br>Joined only because he was there! 😉</div>");
+
+        // Truffles
+        L.marker([12.972094418290464, 77.60085960844576]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>🍔 Truffles</b><br>Church Street favorites!</div>");
+
+        // His Home
+        L.marker([12.856463027578764, 77.59609824679666]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>🏡 His Home</b><br>Where his mom loves me hehe! 😊</div>");
+
+        // Aquarium
+        L.marker([13.006750309017162, 77.59220054097624]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>🦈 Aquarium</b><br>Saw the lemon shark here!</div>");
+
+        // Empire Restaurant
+        L.marker([12.975613839974988, 77.60278573728117]).addTo(map)
+            .bindPopup("<div class='popup-content'><b>🍗 Empire Restaurant</b><br>Church Street - good food!</div>")
             .openPopup();
             
     </script>
